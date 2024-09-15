@@ -1,0 +1,257 @@
+<rdf:RDF 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:owl="http://www.w3.org/2002/07/owl#" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+  <!-- OWL Header -->
+  <owl:Ontology rdf:about="http://www.linkeddatatools.com/MechanicalEngineering">
+    <dc:title>Mechanical Engineering</dc:title>
+    <dc:description>All mechanical engineering parts</dc:description>
+  </owl:Ontology>
+
+  <!-- Defining the subclasses under Thing -->
+
+  <!-- OWL Subclass definition - Engineering Design -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#EngineeringDesign">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Engineering Design</rdfs:label>
+    <rdfs:comment>Assist engineers with mechanical system design</rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Compliance Consistency -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#ComplianceConsistency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#EngineeringDesign"/>
+    <rdfs:label>Compliance Consistency</rdfs:label>
+    <rdfs:comment>Ensure consistency in compliance</rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Regulatory Mapping -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#RegulatoryMapping">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#ComplianceConsistency"/>
+    <rdfs:label>Regulatory Mapping</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Lifecycle Traceability -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#LifecycleTraceability">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#ComplianceConsistency"/>
+    <rdfs:label>Lifecycle Traceability</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Adaptability in Action -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#AdaptabilityInAction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#EngineeringDesign"/>
+    <rdfs:label>Adaptability In Action</rdfs:label>
+    <rdfs:comment>Adapting for various projects</rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Simulation Synergy -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#SimulationSynergy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#EngineeringDesign"/>
+    <rdfs:label>Simulation Synergy</rdfs:label>
+    <rdfs:comment>supporting mechanical system</rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Knowledge Discovery -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#KnowledgeDiscovery">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Knowledge Discovery</rdfs:label>
+    <rdfs:comment>Assist researchers to discover knowledge</rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Optimizing Operations -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#OptimizingOperations">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#KnowledgeDiscovery"/>
+    <rdfs:label>Optimizing Operations</rdfs:label>
+    <rdfs:comment>Enable better manufacturing process</rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Process Standardization -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#ProcessStandardization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#OptimizingOperations"/>
+    <rdfs:label>Process Standardization</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Optimization Algorithms Integration -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#OptimizationAlgorithmsIntegration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#OptimizingOperations"/>
+    <rdfs:label>Optimization Algorithms Integration</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Unveiling Insights -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#UnveilingInsights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#KnowledgeDiscovery"/>
+    <rdfs:label>Unveiling Insights</rdfs:label>
+    <rdfs:comment>provide insights for mechanical engineering insight</rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Bridging the Data Divide -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#BridgingTheDataDivide">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#KnowledgeDiscovery"/>
+    <rdfs:label>Bridging the Data Divide</rdfs:label>
+    <rdfs:comment>Support engineers in discovering knowledge</rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Quality Control -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#QualityControl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Quality Control</rdfs:label>
+    <rdfs:comment>Enhancing the quality and saftey of the product</rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Quality Orchestration -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#QualityOrchestration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#QualityControl"/>
+    <rdfs:label>Quality Orchestration</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Ontology's Impact on Product Excellence -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#OntologysImpactOnProductExcellence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#QualityControl"/>
+    <rdfs:label>Ontology's Impact on Product Excellence</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Holistic Quality Assurance -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#HolisticQualityAssurance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#OntologysImpactOnProductExcellence"/>
+    <rdfs:label>Holistic Quality Assurance</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+ <!-- OWL Subclass definition - Safty Intrgration -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#SaftyIntrgration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#OntologysImpactOnProductExcellence"/>
+    <rdfs:label>Safty Intrgration</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Regulatory Harmony -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#RegulatoryHarmony">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#QualityControl"/>
+    <rdfs:label>Regulatory Harmony</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Education and Training -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#EducationAndTraining">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Education and Training</rdfs:label>
+    <rdfs:comment>Support users to understand mechanical engineeering principals better</rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Illuminating Education -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#IlluminatingEducation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#EducationAndTraining"/>
+    <rdfs:label>Illuminating Education</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Knowledge Evolution -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#KnowledgeEvolution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#EducationAndTraining"/>
+    <rdfs:label>Knowledge Evolution</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Dynamic Training Modules -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#DynamicTrainingModules">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#KnowledgeEvolution"/>
+    <rdfs:label>Dynamic Training Modules</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Community Knowledge Sharing -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#CommunityKnowledgeSharing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#KnowledgeEvolution"/>
+    <rdfs:label>Community Knowledge Sharing</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Enriching the Learning Landscape -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#EnrichingTheLearningLandscape">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#KnowledgeEvolution"/>
+    <rdfs:label>Enriching the Learning Landscape</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Supply Chain Management -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#SupplyChainManagement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Supply Chain Management</rdfs:label>
+    <rdfs:comment>Optimize suply chain by tracking materials</rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Streamlining Material Tracking -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#StreamliningMaterialTracking">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#SupplyChainManagement"/>
+    <rdfs:label>Streamlining Material Tracking</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Ontology's Role in Market-Driven Agility -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#OntologysRoleInMarketDrivenAgility">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#SupplyChainManagement"/>
+    <rdfs:label>Ontology's Role in Market-Driven Agility</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Real-time Data Analysis -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#RealTimeDataAnalysis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#OntologysRoleInMarketDrivenAgility"/>
+    <rdfs:label>Real-time Data Analysis</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Predictive Modeling -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#PredictiveModeling">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#OntologysRoleInMarketDrivenAgility"/>
+    <rdfs:label>Predictive Modeling</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+  </owl:Class>
+
+  <!-- OWL Subclass definition - Operational Efficiency Unleashed -->
+  <owl:Class rdf:about="http://www.linkeddatatools.com/MechanicalEngineering#OperationalEfficiencyUnleashed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/MechanicalEngineering#SupplyChainManagement"/>
+    <rdfs:label>Operational Efficiency Unleashed</rdfs:label>
+    <rdfs:comment>Enhance suply chain efficiency</rdfs:comment>
+  </owl:Class>
+
+</rdf:RDF>
+
+
